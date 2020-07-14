@@ -22,6 +22,7 @@ app.use(TestController);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {
+    console.log(process.env.GOOGLE_API_KEY);
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });
